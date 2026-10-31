@@ -1,151 +1,81 @@
 
-Customer Retention and Churn Analysis
+
+
+Customer Churn Analysis
 
 1. Project Overview
 
-This project analyzes customer subscription data to understand why customers leave a service and identify opportunities to improve customer retention.
+Customer churn analysis is the process of identifying customers who stop using a company's services. This project analyzes customer data to understand churn patterns and identify the reasons customers leave.
 
-The analysis focuses on churn rates, customer tenure, contract types, monthly charges, and customer segments. The goal is to provide useful insights and recommendations for a subscription-based business.
+2. Objective
 
-2. Objectives
+- Calculate the customer churn rate.
+- Identify customer groups with high churn.
+- Analyze customer contract types.
+- Visualize churn using graphs.
+- Suggest ways to reduce customer churn.
 
-- Clean and organize the customer dataset.
-- Calculate the overall customer churn rate.
-- Identify customer segments with higher churn.
-- Analyze customer tenure and retention patterns.
-- Study the relationship between contract type and churn.
-- Examine monthly charges and service subscriptions.
-- Recommend strategies to improve customer retention.
+3. Dataset
 
-3. Dataset Description
+- Dataset: Telco Customer Churn
+- Total records: 7,043
+- Total columns: 21
+- Data source: Kaggle
 
-The project uses the Telco Customer Churn dataset.
+4. Tools and Technologies
 
-The dataset includes customer information such as:
+- Python
+- Google Colab
+- Pandas
+- Matplotlib
+- GitHub
 
-- Customer ID
-- Gender and senior-citizen status
-- Partner and dependent status
-- Tenure in months
-- Phone and internet services
-- Contract type
-- Payment method
-- Monthly charges
-- Total charges
-- Churn status
+5. Data Cleaning
 
-The "Churn" column indicates whether a customer has left the service.
-
-4. Data Cleaning and Preparation
-
-The following checks will be performed:
-
-1. Check the dataset dimensions and column names.
-2. Identify missing or blank values.
-3. Check for duplicate records.
-4. Convert numeric columns to appropriate data types.
-5. Verify that the churn column contains valid categories.
-6. Prepare the data for analysis.
-
-The "TotalCharges" column should be checked carefully because some records may contain blank values.
-
-5. Key Performance Indicators
-
-Customer Churn Rate
-
-Churn rate measures the percentage of customers who left the service.
-
-Formula:
-
-Churn Rate = (Number of Churned Customers / Total Customers) × 100
-
-Customer Retention Rate
-
-Retention rate measures the percentage of customers who remained with the service during the measured period.
-
-For a simple dataset-based comparison:
-
-Retention Rate = (Number of Customers Who Stayed / Total Customers) × 100
-
-Average Customer Tenure
-
-Average tenure measures how long customers have been with the company.
-
-Average Tenure = Sum of Customer Tenure / Total Number of Customers
+- Loaded the CSV dataset using Pandas.
+- Checked dataset information and missing values.
+- Converted TotalCharges into numeric format.
+- Removed rows containing missing values.
 
 6. Exploratory Data Analysis
 
-The following comparisons will be performed:
+Overall Customer Churn
+
+The calculated customer churn percentage is approximately 26.58%.
 
 Churn by Contract Type
 
-Compare churn among month-to-month, one-year, and two-year contract customers.
+- Month-to-month contracts: 1,655 churned customers.
+- One-year contracts: 166 churned customers.
+- Two-year contracts: 48 churned customers.
 
-Churn by Tenure
+Observation: Month-to-month contract customers have the highest number of churned customers.
 
-Examine whether customers with shorter or longer tenure are more likely to churn.
+7. Visualizations
 
-Churn by Monthly Charges
+Two bar graphs were created:
 
-Compare monthly charges for customers who churned and customers who stayed.
+1. Customer Churn Analysis – compares customers who stayed and left.
+2. Churn by Contract Type – compares churn across different contract types.
 
-Churn by Internet Service
+8. Key Findings
 
-Study churn patterns across different internet service types.
+- Approximately 26.58% of customers left the service.
+- Most customers continued using the service.
+- Month-to-month contracts had the highest number of churned customers.
+- Two-year contracts had the lowest number of churned customers.
 
-Churn by Payment Method
+9. Suggestions
 
-Compare churn across different payment methods.
-
-Customer Retention Patterns
-
-Identify customer groups that may need additional support or retention offers.
-
-7. Expected Visualizations
-
-The project will include:
-
-- Churned versus retained customer chart
-- Churn rate by contract type
-- Churn by tenure group
-- Churn by internet service
-- Churn by payment method
-- Monthly charges comparison
-
-8. Business Recommendations
-
-The following recommendations will be evaluated against the actual analysis results:
-
-1. Improve onboarding: Provide additional guidance and support to new customers.
-2. Encourage longer-term contracts: Offer suitable benefits to customers who choose longer subscriptions.
-3. Monitor at-risk customers: Identify customer segments with high churn and investigate their needs.
-4. Review pricing: Examine whether higher monthly charges are associated with churn.
-5. Improve customer support: Make it easier for customers to resolve issues quickly.
-6. Personalize retention offers: Provide relevant offers based on customer needs and subscription history.
-
-These recommendations should be refined after the data analysis confirms which factors are most strongly associated with churn.
-
-9. Tools and Technologies
-
-- Python
-- Pandas
-- Matplotlib
-- Seaborn
-- Jupyter Notebook or Google Colab
-- GitHub
+- Provide special offers to month-to-month customers.
+- Improve customer support.
+- Offer discounts for long-term contracts.
+- Regularly collect customer feedback.
 
 10. Conclusion
 
-Customer churn analysis helps businesses understand customer behavior and identify opportunities to improve retention.
+This project helped identify customer churn patterns using Python and data visualization. The analysis shows that month-to-month contract customers have a higher number of churn cases. These findings can help companies improve customer satisfaction and reduce churn.
 
-This project will use data cleaning, exploratory analysis, statistical summaries, and visualizations to identify churn patterns and develop evidence-based business recommendations.
+---
 
-Project Status: Analysis in progress.
-
-11. Deliverables
-
-- Customer churn dataset
-- Data cleaning and analysis
-- Data visualizations
-- Key findings and recommendations
-- Final project report
+Project Status: Completed
